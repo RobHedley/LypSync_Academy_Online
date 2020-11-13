@@ -1,4 +1,6 @@
 import './App.css';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
 import Quiz from 'react-quiz-component';
 
 function App() {
@@ -107,10 +109,11 @@ function App() {
         <p>
           LypSync Online Assesment.
         </p>
-        <Quiz quiz={quiz}/>
+        <AmplifySignOut />
       </header>
+      <Quiz quiz={quiz}/>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);

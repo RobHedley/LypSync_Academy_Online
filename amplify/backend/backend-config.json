@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "lypsynconline0e49317b": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
