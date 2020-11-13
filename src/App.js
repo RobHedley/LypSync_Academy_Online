@@ -105,7 +105,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          LypSync Test Quiz.
+          LypSync Online Assesment.
         </p>
         <Quiz quiz={quiz}/>
       </header>
