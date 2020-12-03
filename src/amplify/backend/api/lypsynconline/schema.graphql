@@ -1,0 +1,30 @@
+type Categories @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+}
+
+type CourseLevel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+}
+
+type Course @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  category: Int
+  level: Int
+  coursework: AWSURL
+  assessment: AWSJSON
+  passmark: Int
+  CPDNo: String
+  CourseLevel: CourseLevel @connection
+  Categories: Categories @connection
+}
+
+type Note @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  description: String
+  image: String
+}
+  
