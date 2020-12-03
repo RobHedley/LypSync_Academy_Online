@@ -163,7 +163,7 @@ function App() {
         </p>
         <AmplifySignOut />
       </header>
-      <h1>My Notes App</h1>
+      <h1>My Notes App test</h1>
       <input
         onChange={e => setFormData({ ...formData, 'name': e.target.value})}
         placeholder="Note name"
