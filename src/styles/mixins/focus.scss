@@ -1,0 +1,16 @@
+@mixin focusState {
+    outline: none;
+    box-shadow: 0 0 0 3px $color-yellow-200;
+  }
+  
+  @mixin focusInsideState {
+    outline: none;
+    box-shadow: 0 0 0 3px $color-yellow-200 inset;
+  }
+  
+  @mixin focusSolidState {
+    outline: none;
+    background-color: $color-yellow-200;
+    border-radius: 5px;
+  }
+  
