@@ -1,0 +1,61 @@
+@mixin tinyText {
+    font-family: $font-body;
+    font-size: $font-size-sm-1;
+    margin-bottom: $spacing-2;
+    line-height: 1.21;
+  }
+  
+  @mixin text($size) {
+    @if ($size == 1) {
+      font-family: $font-extrabold;
+      font-size: $font-size-6;
+      line-height: 1.18;
+      margin-bottom: $spacing-6;
+      text-transform: uppercase;
+    }
+  
+    @if $size == 1.5 {
+      font-family: $font;
+      font-weight: normal;
+      font-size: $font-size-6;
+      line-height: 1.18;
+      margin-bottom: $spacing-6;
+    }
+  
+    @if ($size == 2) {
+      font-family: $font;
+      font-size: $font-size-5;
+      line-height: 1.19;
+      margin-bottom: $spacing-5;
+    }
+  
+    @if ($size == 3) {
+      font-family: $font;
+      font-size: $font-size-4;
+      line-height: 1.25;
+      margin-bottom: $spacing-4;
+    }
+  
+    @if ($size == 4) {
+      font-family: $font-extrabold;
+      font-size: $font-size-2;
+      line-height: 1.25;
+      margin-bottom: $spacing-3;
+    }
+  
+    @if ($size == 5) {
+      font-family: $font;
+      font-weight: 500;
+      font-size: $font-size-2;
+      line-height: 1.39;
+      margin-bottom: $spacing-3;
+    }
+  
+    @if ($size >= 6) {
+      font-family: $font;
+      font-size: $font-size-1;
+      line-height: 1.39;
+      margin-bottom: $spacing-3;
+    }
+  }
+  

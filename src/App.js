@@ -5,6 +5,7 @@ import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
 
+import Logo from './components/atoms/logo/Logo'
 import Quiz from 'react-quiz-component';
 
 const initialFormState = { name: '', description: '' }
@@ -63,7 +64,7 @@ function App() {
       {
         "question": "Which of the following is NOT a layer of the skin?",
         "questionType": "text",
-        "questionPic": "https://dummyimage.com/600x400/000/fff&text=X", // if you need to display Picture in Question
+        "questionPic": "https://dummyimage.com/600x400/000/fff&text=X",
         "answerSelectionType": "single",
         "answers": [
           "Epidermis",
@@ -161,6 +162,7 @@ function App() {
         <p>
           LypSync Online Assesment.
         </p>
+        <Logo />
         <AmplifySignOut />
       </header>
       <h1>My Notes App</h1>
@@ -185,10 +187,10 @@ function App() {
             <div key={note.id || note.name}>
               <h2>{note.name}</h2>
               <p>{note.description}</p>
-              <button onClick={() => deleteNote(note)}>Delete note</button>
               {
-                note.image && <img src={note.image} style={{width: 400}} alt='' />
+                note.image && <img src={note.image} style={{width: 200}} alt='' />
               }
+              <br /><button onClick={() => deleteNote(note)}>Delete note</button>
             </div>
           ))
         }
