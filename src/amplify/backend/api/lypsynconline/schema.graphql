@@ -1,24 +1,41 @@
-type Categories @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  Name: String
+enum CourseLevel {
+  FOUNDATION
+  INTERMEDIATE
+  ADVANCED
+  MASTERADVANCED
 }
 
-type CourseLevel @model @auth(rules: [{allow: public}]) {
+enum CourseCategory {
+  AESTHETICS
+  BEAUTY
+}
+
+type Roles @model @auth(rules: [{allow: public}]) {
   id: ID!
-  Name: String
+  desc: String
+  name: String
+}
+
+type Users @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  email: AWSEmail
+  first_name: String
+  last_name: String
+  company_name: String
+  date_joined: AWSDate
+  date_of_birth: AWSDate
+  role: String
+  courses: [String]
 }
 
 type Course @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String
-  category: Int
-  level: Int
   coursework: AWSURL
   assessment: AWSJSON
-  passmark: Int
-  CPDNo: String
-  CourseLevel: CourseLevel @connection
-  Categories: Categories @connection
+  cpdNo: String
+  category: CourseCategory
+  courseLevel: CourseLevel
 }
 
 type Note @model @auth(rules: [{allow: public}]) {
@@ -27,4 +44,4 @@ type Note @model @auth(rules: [{allow: public}]) {
   description: String
   image: String
 }
-  
+ 

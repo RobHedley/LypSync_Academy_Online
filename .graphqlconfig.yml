@@ -1,15 +1,18 @@
 projects:
-  lypsynconline:
-    schemaPath: src/graphql/schema.json
+  lypsynconline-dev:
+    schemaPath: graphql/schema.json
     includes:
-      - src/graphql/**/*.js
+      - graphql/**/*.js
     excludes:
       - ./amplify/**
     extensions:
       amplify:
         codeGenTarget: javascript
         generatedFileName: ''
-        docsFilePath: src/graphql
+        docsFilePath: graphql
+        region: eu-west-2
+        apiId: jf5gtstj3vc35nqfy3m7mo2pmm
+        maxDepth: 2
 extensions:
   amplify:
     version: 3

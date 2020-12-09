@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { API, Storage } from 'aws-amplify';
+import { API, Storage, Auth } from 'aws-amplify';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
-import { listNotes } from './graphql/queries';
+import { listNotes, listCourses } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
 
 import Logo from './components/atoms/logo/Logo'
@@ -13,10 +13,12 @@ const initialFormState = { name: '', description: '' }
 function App() {
 
   const [notes, setNotes] = useState([]);
+  const [courses, setCourses] = useState([])
   const [formData, setFormData] = useState(initialFormState);
 
   useEffect(() => {
     fetchNotes();
+    fetchCourses();
   }, []);
 
   async function fetchNotes() {
@@ -30,6 +32,25 @@ function App() {
       return note;
     }))
     setNotes(apiData.data.listNotes.items);
+  }
+
+  async function fetchCourses() {
+    const curUser = await Auth.currentAuthenticatedUser()
+    .then((data) => {
+       // this data has user details in accessToken
+       console.log(data)
+    }).catch(err => console.log(err));
+    const apiData = await API.graphql({ query: listCourses });
+    const coursesFromAPI = apiData.data.listCourses.items;
+    console.log('Courses', coursesFromAPI)
+    // await Promise.all(notesFromAPI.map(async note => {
+    //   if (note.image) {
+    //     const image = await Storage.get(note.image);
+    //     note.image = image;
+    //   }
+    //   return note;
+    // }))
+    //setNotes(apiData.data.listNotes.items);
   }
 
   async function createNote() {
