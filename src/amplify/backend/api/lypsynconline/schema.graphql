@@ -1,3 +1,9 @@
+enum Roles {
+  ADMIN
+  STAFF
+  STUDENT
+}
+
 enum CourseLevel {
   FOUNDATION
   INTERMEDIATE
@@ -8,12 +14,6 @@ enum CourseLevel {
 enum CourseCategory {
   AESTHETICS
   BEAUTY
-}
-
-type Roles @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  desc: String
-  name: String
 }
 
 type Users @model @auth(rules: [{allow: public}]) {

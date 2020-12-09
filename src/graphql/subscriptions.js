@@ -1,48 +1,6 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateRoles = /* GraphQL */ `
-  subscription OnCreateRoles {
-    onCreateRoles {
-      id
-      desc
-      name
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateRoles = /* GraphQL */ `
-  subscription OnUpdateRoles {
-    onUpdateRoles {
-      id
-      desc
-      name
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteRoles = /* GraphQL */ `
-  subscription OnDeleteRoles {
-    onDeleteRoles {
-      id
-      desc
-      name
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-  }
-`;
 export const onCreateUsers = /* GraphQL */ `
   subscription OnCreateUsers {
     onCreateUsers {

@@ -1,57 +1,6 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createRoles = /* GraphQL */ `
-  mutation CreateRoles(
-    $input: CreateRolesInput!
-    $condition: ModelRolesConditionInput
-  ) {
-    createRoles(input: $input, condition: $condition) {
-      id
-      desc
-      name
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const updateRoles = /* GraphQL */ `
-  mutation UpdateRoles(
-    $input: UpdateRolesInput!
-    $condition: ModelRolesConditionInput
-  ) {
-    updateRoles(input: $input, condition: $condition) {
-      id
-      desc
-      name
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const deleteRoles = /* GraphQL */ `
-  mutation DeleteRoles(
-    $input: DeleteRolesInput!
-    $condition: ModelRolesConditionInput
-  ) {
-    deleteRoles(input: $input, condition: $condition) {
-      id
-      desc
-      name
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-  }
-`;
 export const createUsers = /* GraphQL */ `
   mutation CreateUsers(
     $input: CreateUsersInput!
