@@ -1,0 +1,70 @@
+@import '../../styles/resources.scss';
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%;
+}
+
+.chartWrapper {
+    margin-bottom: 40px;
+    height: 150px;
+    width: 100%;
+}
+
+.textBlock {
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+    //min-height: 30px;
+}
+
+.statText {
+    flex: 1;
+
+    @include text(6) 
+}
+
+.statResult {
+    width: 40px;
+    padding: 5px;
+    font-weight: bold;
+
+    @include text(6) 
+}
+
+.highlight {
+    border-radius: $border-radius-medium;
+    padding: 5px;
+    background-color: $color-beige-200;
+    margin-bottom: 20px;
+}
+
+.linkButton {
+    width: 100%;
+    display: inline-block;
+    margin: 0px;
+    font: bold 11px Lato;
+    text-decoration: none;
+    background-color: $color-grid3-beige;
+    text-align: center;
+    color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: $border-radius-medium;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.linkButton:hover {
+    color: $color-grid3-blue;
+    background-color: $color-grid3-light-brown;
+}
+
+
+.explanation {
+    font-size: small;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 1px;
+}

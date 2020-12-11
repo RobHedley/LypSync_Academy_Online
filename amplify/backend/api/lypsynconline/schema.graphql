@@ -1,6 +1,48 @@
-type Note @model {
+enum Roles {
+  ADMIN
+  STAFF
+  STUDENT
+}
+
+enum CourseLevel {
+  FOUNDATION
+  INTERMEDIATE
+  ADVANCED
+  MASTERADVANCED
+}
+
+enum CourseCategory {
+  AESTHETICS
+  BEAUTY
+}
+
+type Users @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  email: AWSEmail
+  first_name: String
+  last_name: String
+  company_name: String
+  date_joined: AWSDate
+  date_of_birth: AWSDate
+  role: Roles
+  courses: [String]
+}
+
+type Course @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  coursework: AWSURL
+  assessment: AWSJSON
+  cpdNo: String
+  category: CourseCategory
+  courseLevel: CourseLevel
+  description: String
+}
+
+type Note @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!
   description: String
   image: String
 }
+ 

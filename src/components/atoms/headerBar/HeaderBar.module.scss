@@ -1,0 +1,73 @@
+@import "../../../styles/resources.scss";
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: $color-white;
+    font-family: 'Lato';
+    font-weight: 700;
+
+    @include box-shadow-dark;
+  }
+
+.content {
+  display: flex;
+  padding: 10px 10px 0px 60px;
+  text-transform: uppercase;
+}
+
+.grid3Fade {
+  background: #e1ac88;
+  height: 5px;
+  width: 100%;
+}
+
+.logo {
+  height: 40px;
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+ul.header {
+  //width: 400px;
+  height: 60px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.header li {
+  float: left;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+ul.header li a {
+  display: block;
+  color: #63666b;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+ul.header li a:hover {
+  color: #f26522;
+}
+
+ul.header li:hover {
+  border-bottom: 2px solid #f26522;
+}
+
+.selected {
+  color: #f26522;
+}
+  
