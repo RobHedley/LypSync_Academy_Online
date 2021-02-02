@@ -5,6 +5,7 @@ import 'react-tabs/style/react-tabs.css';
 
 import HeaderBar from '../../components/atoms/headerBar/HeaderBar'
 import AdminCourses from '../../components/organisms/adminCourses/AdminCourses'
+import CourseStats from '../../components/organisms/courseStats/CourseStats'
 
 const Admin = () => {
 
@@ -33,6 +34,7 @@ const Admin = () => {
         </TabPanel>
         <TabPanel>
           <h2>Analytics</h2>
+          <CourseStats />
         </TabPanel>
       </Tabs>
     </div>

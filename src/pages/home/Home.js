@@ -4,22 +4,25 @@ import { listNotes, listUserss } from '../../graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from '../../graphql/mutations';
 import { API, Storage, Auth } from 'aws-amplify';
 
-import Quiz from 'react-quiz-component';
+//import Quiz from 'react-quiz-component';
 import HeaderBar from '../../components/atoms/headerBar/HeaderBar'
-
+import LibraryBooksTwoToneIcon from '@material-ui/icons/LibraryBooksTwoTone';
+import ContactSupportOutlinedIcon from '@material-ui/icons/ContactSupportOutlined';
+import AccountBoxOutlinedIcon from '@material-ui/icons/AccountBoxOutlined';
+import CardGiftcardOutlinedIcon from '@material-ui/icons/CardGiftcardOutlined';
 import styles from './Home.module.scss'
 
 const initialFormState = { name: '', description: '' }
 
 const Home = () => {
-  const [selectedState, setselectedState] = useState('National')
 
   const [notes, setNotes] = useState([]);
   const [courses, setCourses] = useState([])
+  const [currentUser, setCurrentUser] = useState({firstName: '', lastName: '', email: ''})
   const [formData, setFormData] = useState(initialFormState);
 
   useEffect(() => {
-    fetchNotes();
+    //fetchNotes();
     fetchCourses();
   }, []);
 
@@ -41,6 +44,7 @@ const Home = () => {
     .then((data) => {
        // this data has user details in accessToken
        console.log('currentUser', data)
+       setCurrentUser({firstName: 'Rob', lastName: 'Hedley', email: 'rob@robhedley.com'})
     }).catch(err => console.log(err));
     const apiData = await API.graphql({ query: listUserss });
     const UsersFromAPI = apiData.data;
@@ -186,58 +190,54 @@ const Home = () => {
       <header className="App-header">
         <HeaderBar />
       </header>
-      <h1>My Notes App test</h1>
-      <input
-        onChange={e => setFormData({ ...formData, 'name': e.target.value})}
-        placeholder="Note name"
-        value={formData.name}
-      />
-      <input
-        onChange={e => setFormData({ ...formData, 'description': e.target.value})}
-        placeholder="Note description"
-        value={formData.description}
-      />
-      <input
-        type="file"
-        onChange={onChange}
-      />
-      <button onClick={createNote}>Create Note</button>
-      <div style={{marginBottom: 30}}>
-        {
-          notes.map(note => (
-            <div key={note.id || note.name}>
-              <h2>{note.name}</h2>
-              <p>{note.description}</p>
-              {
-                note.image && <img src={note.image} style={{width: 200}} alt='' />
-              }
-              <br /><button onClick={() => deleteNote(note)}>Delete note</button>
-            </div>
-          ))
-        }
+      <h2>Hi {currentUser.firstName}, where do you want to go?</h2>
+      <div className={styles.grid}>
+        <div className={styles.grid__item}>
+          <div className={styles.grid__itemTop}>
+            <LibraryBooksTwoToneIcon style={{ fontSize: 80, color: '#e1ac88' }}/>
+          </div>
+          <div className={styles.grid__itemMid}>
+            My Courses
+          </div>
+          <div className={styles.grid__itemBot}>
+            <p>See all of you available and completed courses. From here you can complete any courses that you havent already.</p>
+          </div>  
+        </div>
+        <div className={styles.grid__item}>
+          <div className={styles.grid__itemTop}>
+            <CardGiftcardOutlinedIcon style={{ fontSize: 140, color: '#e1ac88' }}/>
+          </div>
+          <div className={styles.grid__itemMid}>
+            My Certificates
+          </div>
+          <div className={styles.grid__itemBot}>
+            <p>View, print and send a link for all of you certificates.</p>
+          </div>  
+        </div>
+        <div className={styles.grid__item}>
+          <div className={styles.grid__itemTop}>
+            <AccountBoxOutlinedIcon style={{ fontSize: 140, color: '#e1ac88' }}/>
+          </div>
+          <div className={styles.grid__itemMid}>
+            Get help
+          </div>
+          <div className={styles.grid__itemBot}>
+            <p>Having a problem, need to ask a question? This is the section for you.</p>  
+          </div>  
+        </div>
+        <div className={styles.grid__item}>
+          <div className={styles.grid__itemTop}>
+            <ContactSupportOutlinedIcon style={{ fontSize: 140, color: '#e1ac88' }}/>
+          </div>
+          <div className={styles.grid__itemMid}>
+            My Profile Settings
+          </div>
+          <div className={styles.grid__itemBot}>
+            <p>Update your profile information such as contact details, the name you want on your certificates etc.</p>  
+          </div>  
+        </div>
       </div>
-      <Quiz quiz={quiz}/>
-    </div>
-    <div className="NavContainer">
-      {/* <HeaderBar /> */}
-      Home Page
-    </div>
-    <div className="ContentLeft">
-      {/* <SideBar position={'left'} wide={true}>
-      <p className={styles.explanation}></p>
-        <DropDown options={getStateOptions()} onChange={handleChange}/>
-        {stateLevel &&
-          <LayerControl data={getStateData(masterFile)} selectedState={selectedState} />
-        }
-        <OverlayControl data={getOverlayData(masterFile)} />
-      </SideBar> */}
-      Side bar
-    </div>
-    <div className="ContentRight">
-      {/* <SideBar position={'right'} wide={true}>
-        <StatsPanel masterFile={masterFile} selectedState={selectedState} />
-      </SideBar> */}
-      other bar
+      {/* <Quiz quiz={quiz}/> */}
     </div>
   </Fragment>
   );
