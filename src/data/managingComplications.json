@@ -1,0 +1,263 @@
+{
+    "quizTitle": "Managing Complications",
+    "quizSynopsis": "Good Luck",
+    "questions": [
+      {
+        "question": "What does the 'S' of 'DRSABCD' protocol stand for? ?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "Scream",
+          "Scared",
+          "Shout"
+        ],
+        "correctAnswer": "3",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "What is a splash incident?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "spilling hot liquid",
+          "Blood or Bodily fluid coming into contact with Eyes, Mouth, broken Skin or mucus Membrane.",
+          "Membrane.Any spill regardless of the nature of the fluid"
+        ],
+        "correctAnswer": "2",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "When should a sharps box be emptied?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "1/4 full",
+          "1/2 full",
+          "3/4 full",
+          "When you can't close the lid"
+        ],
+        "correctAnswer": "3",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "Why is it important to manage client expectations?",
+        "questionType": "text",
+        "answerSelectionType": "multiple",
+        "answers": [
+          "To catch up on the gossip",
+          "To ensure they know what outcome to expect from the treatment",
+          "It isn't, it just wastes time",
+          "It isn't, I will just tell them what I am doing",
+          "To ensure the client know the steps of the procedure and are comfortable with it",
+          "To ensure the client is happy and happy to go ahead with the treatment"
+        ],
+        "correctAnswer": [2,5,6],
+        "messageForCorrectAnswer": "Correct answers. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "30"
+      },
+      {
+        "question": "treatmentWhat is the acronym to follow if you suspect a Stroke?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "S.L.O.W.",
+          "F.A.S.T"
+        ],
+        "correctAnswer": "2",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "What is Hyaluronidase used for?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "Making Hyaluronic Acid based filler thicker",
+          "Dissolving Hyaluronic Acid based Fillers",
+          "It has no use with regards to Aesthetics",
+          "To be injected before you inject the filler",
+          "To make the filler go further"
+        ],
+        "correctAnswer": "2",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "What are Nodules?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "A lump caused by the concentration of filler in one area ",
+          "A part of a syringe",
+          "Part of the ingredients that make filler"
+        ],
+        "correctAnswer": "1",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "How do you treat Nodules?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "Just leave them, they will go eventually",
+          "Massage them to disperse the filler, dissolve the filler in necessary"
+        ],
+        "correctAnswer": "2",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "What causes a Vascular Occlusion?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "The opening of restricted blood vessels",
+          "When Blood is no longer able to pass through a blood vessel"
+        ],
+        "correctAnswer": "2",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "If left untreated, what will a Vascular Occlusion cause?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "Necrosis (death of Tissue)",
+          "Localised pain and nothing more"
+        ],
+        "correctAnswer": "1",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "What steps can be taken to reduce the risk of skininfection?",
+        "questionType": "text",
+        "answerSelectionType": "multiple",
+        "answers": [
+          "Remove Make up",
+          "Antiseptic wipe of area to be treated",
+          "New gloves for each client"
+        ],
+        "correctAnswer": [1,2,3],
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "30"
+      },
+      {
+        "question": "Why is it important to take a full medical history?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "To see if your client has been to one of your competitors.",
+          "To help decide if the treatment should go ahead and minimise the risk of complications"
+        ],
+        "correctAnswer": "2",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "What is the cause of the Tyndall effect?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "Filler sitting too deep",
+          "Filler sitting too superficially, just under the surface of the skin",
+          "Not enough filler",
+          "Dry skin"
+        ],
+        "correctAnswer": "2",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "What colour is associated with the appearance of the Tyndall effect?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "Green",
+          "Blue",
+          "Red"
+        ],
+        "correctAnswer": "2",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "What is Ptosis?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "Red Eye",
+          "A skin condition",
+          "Drooping of an anatomical area"
+        ],
+        "correctAnswer": "3",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "Given time, will Ptosis correct itself?",
+        "questionType": "text",
+        "answerSelectionType": "single",
+        "answers": [
+          "Yes",
+          "No"
+        ],
+        "correctAnswer": "1",
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      },
+      {
+        "question": "Which are the common areas that can suffer from Ptosis in Aesthetics?",
+        "questionType": "text",
+        "answerSelectionType": "multiple",
+        "answers": [
+          "Eyelid",
+          "Brow",
+          "Jaw",
+          "Lips"
+        ],
+        "correctAnswer": [1,2,4],
+        "messageForCorrectAnswer": "Correct answer. Good job.",
+        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "point": "20"
+      }
+    ]
+  } 
