@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './App.scss';
 import { withAuthenticator } from '@aws-amplify/ui-react'
 import {
   HashRouter as Router,
