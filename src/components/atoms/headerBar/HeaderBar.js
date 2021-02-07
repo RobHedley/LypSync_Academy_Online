@@ -27,7 +27,7 @@ const HeaderBar = () => {
               <NavLink to="/myCourses" activeClassName={styles.selected}>My Courses</NavLink>
             </li>
             <li>
-              <NavLink to="/contact" activeClassName={styles.selected}>Contact</NavLink>
+              <NavLink to="/contact" activeClassName={styles.selected}>Help Pages</NavLink>
             </li>
             <li>
               <NavLink to="/admin" activeClassName={styles.selected}>Admin</NavLink>
