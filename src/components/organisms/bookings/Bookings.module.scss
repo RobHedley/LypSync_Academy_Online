@@ -1,0 +1,81 @@
+@import "../../../styles/resources.scss";
+
+.outer {
+    display: flex;
+    margin: 8px;
+    min-height: 400px;
+}
+
+.fifty {
+    flex: 0.5;
+    margin: 8px;
+    padding: 8px;
+    height: 100%;
+    border: 1px solid $color-grey-600;
+    border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+}
+
+.inputtext, .textareastandard, .select, .inputdate { 
+   background-color:#FFFFFF;
+   border:solid 2px #A9A9A9;
+   font-size:13px;
+   color:#000000;
+   -moz-border-radius:15px;
+   -webkit-border-radius:15px;
+   border-radius:15px;
+   padding-top:8px;
+   padding-bottom:8px;
+   padding-left:8px;
+   padding-right:8px;
+}
+
+.label {
+   font-size:14px;
+   color:#333333;
+   font-weight:normal;
+   padding-top:0px;
+   padding-bottom:4px;
+}
+
+.submitButton {
+   background-color:#FFFFFF;
+   border:solid 1px #A9A9A9;
+   font-size:16px;
+   color:#000000;
+   font-weight:bold;
+   padding-top:8px;
+   padding-bottom:8px;
+   padding-right:25px;
+   padding-left:25px;
+   -moz-border-radius:8px;
+   -webkit-border-radius:8px;
+   border-radius:8px;
+}
+
+.form p.submit {
+   margin-top:0px;
+   margin-bottom:0px;
+   text-align:left;
+}
+
+.form p.required label, span.required label {
+    font-weight:bold;
+}
+
+.form p label {
+    float:none;text-align:left
+}
+
+.form span.value {
+    margin-left:0;
+}
+
+.form p.submit {
+    margin-left:6px;
+}

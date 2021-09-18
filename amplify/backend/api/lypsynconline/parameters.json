@@ -1,5 +1,5 @@
 {
-    "AppSyncApiName": "lypsynconline",
-    "DynamoDBBillingMode": "PAY_PER_REQUEST",
-    "DynamoDBEnableServerSideEncryption": false
+  "AppSyncApiName": "lypsynconline",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
 }
