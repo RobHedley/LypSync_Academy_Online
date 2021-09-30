@@ -21,10 +21,10 @@ const HeaderBar = () => {
         <nav>
           <ul className={styles.header}>
             <li>
-              <NavLink to="/" activeClassName={styles.selected} exact>Dashboard</NavLink>
+              <NavLink to="/" activeClassName={styles.selected} exact>Dashboard </NavLink>
             </li>
             <li>
-              <NavLink to="/myCourses" activeClassName={styles.selected}>My Courses</NavLink>
+              <NavLink to="/myCourses" activeClassName={styles.selected}>Courses</NavLink>
             </li>
             <li>
               <NavLink to="/contact" activeClassName={styles.selected}>Help Pages</NavLink>
